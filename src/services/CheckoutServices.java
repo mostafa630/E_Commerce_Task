@@ -46,7 +46,6 @@ public class CheckoutServices {
                 shippingPrice += (item.product.getProductWeight()*item.requiredQuantity * 3.5); // assuming shipping price is 3.5 per kg
             }
         }
-        System.out.println("adklsad;laskdl;skadl;kasdsakd;laksdl;" + shippingPrice);
         totalPrice = netCartPrice + shippingPrice;
         //- check if the user has enough balance or not
         if(!isUserHasEnoughBalance(user.getUserBalance(), totalPrice)) {
